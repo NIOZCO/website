@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(33,33,33);
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.invi {
+    border: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ---------- Header ---------- */
+.webpart1 {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 5px;
+}
+
+/* ---------- Main ---------- */
+.webpart2 {
+    padding: 10px;
+    color: white;
+    flex: 1;
+    padding-bottom: 10px;
+}
+
+/* ltp = Link to Page */
+.ltp {
+    text-decoration: none;
+    color: rgb(0, 149, 255);
+}
+
+/* ml = Mail Link */
+.ml {
+    text-decoration: none;
+    color: rgb(0, 149, 255);
+}
+
+.chrono-box {
+    background-color: black;
+    border: white 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ---------- Footer ---------- */
+.webpart3 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.webpart3 a {
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+.webpart3 a:hover {
+    color: white;
+}
+
+/* Mobile: Wrap footer cleanly */
+@media (max-width: 600px) {
+    .webpart3 {
+        /* instead of next to each other -> untereinander */
+        flex-direction: column;
+        /* Space between lines */
+        gap: 10px;
+        /* center */
+        text-align: center;
+        padding: 15px;
+    }
+}

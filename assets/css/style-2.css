@@ -1,0 +1,93 @@
+
+.box {
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.menu-button {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 50px;
+    margin-right: 10px;
+
+}
+
+.menu-links {
+        background-color: rgb(100, 100, 100);
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;  
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(55, 55, 55);
+    border-radius: 5px;
+    width: 80%;
+    position: relative;
+    color: white;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: grey;
+}
+.popup .close:hover {
+    color: #ff0000;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: auto;
+        text-align: right;
+    }
+
+    .popup{
+        width: 70%;
+    }
+}
+
+/*
+Popup / Modal (Pure CSS, ohne JavaScript)
+Original Code by Prakash (@imprakash)
+Source: https://codepen.io/imprakash/pen/GgNMXO
+License: MIT License
+Modified and adapted for this project
+*/
