@@ -1,117 +1,61 @@
 <!DOCTYPE html>
-    <!-- Language -->
-<html lang="de">
+<html lang="en">
 <head>
-    <!-- Encoding -->
     <meta charset="UTF-8">
-    <!-- Viewport-Meta-Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Website Favicon-->
     <link rel="shortcut icon" href="images/NIOZCO-Logo.png" type="image/x-icon">
-    <!-- Title-Tag -->
     <title>Portfolio</title>
-    <!-- Basic Style File -->
-    <link rel="stylesheet" href="assets/css/style-1.css">
-    <!-- Style File for Popup -->
-    <link rel="stylesheet" href="assets/css/style-2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 <body>
-    <!-- Header -->
-    <div class="webpart1">
-        <!-- Logo -->
-        <img class="logo" src="images/NIOZCO-Logo.png" width="75px" alt="">
-        <!-- Menu -->
-        <div class="box">
-	        <a class="menu-button" href="#popup1">&equiv;</a>
+    <div class="header">
+        <div class="bl">
+            <div class="back">
+                <a href="index.html">&lArr;</a>
+            </div>
+            <div class="language">
+                <a href="portfolio.html">DE</a>
+                <a href="portfolio-en.html">EN</a>
+            </div>
         </div>
-        <div id="popup1" class="overlay">
-	        <div class="popup">
-		        <a class="close" href="#">&times;</a>
-		        <div class="content">
-                    <!-- Language selection -->
-                    <h3>Language selection</h3>
-			        <a class="menu-links" href="portfolio.html">Deutsch</a>
-			        <a class="menu-links" href="portfolio-en.html">English</a>
-                    <hr>
-                    <!-- Menu -->
-                    <h3>Menu</h3>
-                    <a class="menu-links" href="index-en.html">Start</a>
-                    <a class="menu-links" href="portfolio-en.html">Portfolio</a>
-                    <a class="menu-links" href="timeline-en.html">Chronology</a>
-                    <a class="menu-links" href="information-en.html">Informations</a>
-                    <a class="menu-links" href="tools-en.html">Tools</a>
-                    <a class="menu-links" href="profile-en.html">Profiles</a>
-                    <a class="menu-links" href="projekt-en.html">Available soon</a>
-		        </div>
-	        </div>
-        </div>
-        <!--
-            Popup / Modal (Pure CSS, without JavaScript)
-            Original Code by Prakash (@imprakash)
-            Source: https://codepen.io/imprakash/pen/GgNMXO
-            License: MIT License
-            Modified and adapted for this project
-        -->
+        <img class="image" src="./images/NIOZCO-portfolio.png" alt="">
+        <h1>Portfolio</h1>
+        <p>Here you will find a selection of my projects, works, and creative developments.</p>
     </div>
-    <!-- Main -->
-    <div class="webpart2">
-        <!-- Text -->
-         <h1>Portfolio</h1>
-         <p>Here you will find a selection of my projects and results.</p>
-         <p>These include web projects, tools, and other digital works.</p>
-         <p>This page presents completed or relevant work in a clear and concise format.</p>
-        <hr class="invi">
-         <hr>
-        <hr class="invi">
-            
-        <div class="chrono-box">
-            <p>09.05.2026</p>
-            <h3>Creation of the character</h3>
-            <img src="images/halfready-2.png" width="200px" alt="">
-        <p>&copy; NIOZCO&trade; | &copy; Chat GPT</p>
-            <p>Instagram: <a class="ltp" href="https://www.instagram.com/p/DYHIfORDRJK/?igsh=MTB0ZGN5OW81ZXkxcA==">https://www.instagram.com/p/DYHIfORDRJK/?igsh=MTB0ZGN5OW81ZXkxcA==</a></p>
-        <p>Website Page: <a class="menu-links" href="niozco-character-en.html">NIOZCO Character</a></p>
-        <p>Please do not use or repost without permission.</p>
-        </div>
-        <hr class="invi">
-            
-        <div class="chrono-box">
-            <p>02.05.2026</p>
-            <h3>Origin of the Logo</h3>
-            <img src="images/Image-0.png" width="200px" alt="">
-        <p>&copy; NIOZCO&trade;</p>
-            <p>Instagram: <a class="ltp" href="https://www.instagram.com/p/DX04jbxjYn3/?igsh=MTBydm11ZjE4NTVheQ==">https://www.instagram.com/p/DX04jbxjYn3/?igsh=MTBydm11ZjE4NTVheQ==</a></p>
-        <p>Website Page: <a class="menu-links" href="niozco-logo-en.html">NIOZCO Logo</a></p>
-        <p>Please do not use or repost without permission.</p>
-        </div>
-        <hr class="invi">
+    <hr>
+    <div class="main2">
 
-        <!--
-            
-        <div class="chrono-box">
-            <p>--.--.----</p>
-            <h3>----------</h3>
-            <img src="-----" width="200px" style="background-color: rgb(255, 255, 255);" alt="">
-        <p>&copy; -----</p>
-            <p>-----: <a class="ltp" href="-----">-----</a></p>
-            <p>-----: <a class="ltp" href="-----">-----</a></p>
-        <p>-----: <a class="menu-links" href="-----">-----</a></p>
-        <p>Please do not use or repost without permission.</p>
-        </div>
-        <hr class="invi">
+        <div class="portfolio-container">
 
-        -->
+            <div class="portfolio-card">
+                <p>May 9, 2026</p>
+                <img class="portfolio-image" src="./images/halfready-2.png" alt="NIOZCO Character">
+                <div class="portfolio-info">
+                    <h2>NIOZCO Character</h2>
+                    <p>Character Development and Design.</p>
+                    <a href="./portfolio/niozco-charakter-en.html" class="portfolio-button">More Information</a>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <p>May 2, 2026</p>
+                <img class="portfolio-image" src="./images/NIOZCO-Logo.png" alt="NIOZCO Website">
+                <div class="portfolio-info">
+                    <h2>NIOZCO Logo</h2>
+                    <p>Logo Development and Design.</p>
+                    <a href="./portfolio/niozco-logo-en.html" class="portfolio-button">More Information</a>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <!-- Footer -->
-    <div class="webpart3">
-        <!-- Copyright -->
-        <span>&copy; NIOZCO 2026</span>
+    <div class="footer">
+        <span>© NIOZCO 2026</span>
         <span>·</span>
-        <!-- Imprint -->
-        <a href="impressum-en.html">Imprint</a>
+        <a href="./impressum-en.html">Imprint</a>
         <span>·</span>
-        <!-- Privacy Policy -->
-        <a href="datenschutz-en.html">Privacy Policy</a>
+        <a href="./datenschutz-en.html">Privacy Policy</a>
     </div>
 </body>
 </html>

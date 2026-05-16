@@ -1,112 +1,92 @@
 <!DOCTYPE html>
-    <!-- Language -->
 <html lang="de">
 <head>
-    <!-- Encoding -->
     <meta charset="UTF-8">
-    <!-- Viewport-Meta-Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Website Favicon-->
     <link rel="shortcut icon" href="images/NIOZCO-Logo.png" type="image/x-icon">
-    <!-- Title-Tag -->
-    <title>Chronologie</title>
-    <!-- Basic Style File -->
-    <link rel="stylesheet" href="assets/css/style-1.css">
-    <!-- Style File for Popup -->
-    <link rel="stylesheet" href="assets/css/style-2.css">
-    <!-- Style File for Timeline -->
+    <title>Timeline</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
 </head>
 <body>
-    <!-- Header -->
-    <div class="webpart1">
-        <!-- Logo -->
-        <img class="logo" src="images/NIOZCO-Logo.png" width="75px" alt="">
-        <!-- Menu -->
-        <div class="box">
-	        <a class="menu-button" href="#popup1">&equiv;</a>
+    <div class="header">
+        <div class="bl">
+            <div class="back">
+                <a href="index.html">&lArr;</a>
+            </div>
+            <div class="language">
+                <a href="timeline.html">DE</a>
+                <a href="timeline-en.html">EN</a>
+            </div>
         </div>
-        <div id="popup1" class="overlay">
-	        <div class="popup">
-		        <a class="close" href="#">&times;</a>
-		        <div class="content">
-                    <!-- Language selection -->
-                    <h3>Sprachauswahl</h3>
-			        <a class="menu-links" href="timeline.html">Deutsch</a>
-			        <a class="menu-links" href="timeline-en.html">English</a>
-                    <hr>
-                    <!-- Menu -->
-                    <h3>Men&uuml;</h3>
-                    <a class="menu-links" href="index.html">Start</a>
-                    <a class="menu-links" href="portfolio.html">Portfolio</a>
-                    <a class="menu-links" href="timeline.html">Chronologie</a>
-                    <a class="menu-links" href="information.html">Informationen</a>
-                    <a class="menu-links" href="tools.html">Tools</a>
-                    <a class="menu-links" href="profile.html">Profile</a>
-                    <a class="menu-links" href="projekt.html">Demn&auml;chst Verf&uuml;gbar</a>
-		        </div>
-	        </div>
-        </div>
-        <!--
-            Popup / Modal (Pure CSS, without JavaScript)
-            Original Code by Prakash (@imprakash)
-            Source: https://codepen.io/imprakash/pen/GgNMXO
-            License: MIT License
-            Modified and adapted for this project
-        -->
+        <img class="image" src="./images/NIOZCO-timeline.png" alt="">
+        <h1>Timeline</h1>
+        <p>Hier werden wichtige Entwicklungen, Projekte und Ereignisse chronologisch festgehalten.</p>
     </div>
-    <!-- Main -->
-    <div class="webpart2">
-        <!-- Text -->
-         <h1>Chronologie</h1>
-         <p>Diese Zeitlinie zeigt die Entwicklung meiner Projekte und Aktivit&auml;ten in chronologischer Reihenfolge.</p>
-         <p>Sie dokumentiert einzelne Schritte, Ideen und Meilensteine auf dem Weg meiner kreativen Arbeit.</p>
-        <hr class="invi">
-         <hr>
-        <hr class="invi">
-        
-            <div class="timebox">
-                <p><b style="color: rgb(34, 170, 233);">09.05.2026</b></p>
-                <p><b>Entstehung des Charakters</b></p>
-                <p>Es geht um die Entstehung meines Charakters, wie ich ihn entwickelt habe.</p>
-            </div>
-        
-            <div class="timebox">
-                <p><b style="color: rgb(34, 170, 233);">02.05.2026</b></p>
-                <p><b>Entstehung des Logos</b></p>
-                <p>Es geht um die Entstehung meines Logos, wie ich es entwickelt habe.</p>
-            </div>
-        
-            <div class="timebox">
-                <p><b style="color: rgb(34, 170, 233);">18.04.2026</b></p>
-                <p><b>Ank&uuml;ndigung</b></p>
-                <p>Es wird angek&uuml;ndigt, dass es am 02.05.2026 wieder weiter gehen wird und dass am 09.08.2026 ein größeres Projekt startet. </p>
-            </div>
-        
-            <div class="timebox">
-                <p><b style="color: rgb(34, 170, 233);">30.01.2026 - 17.04.2026</b></p>
-                <p><b>Pause</b></p>
-                <p>In diesem Zeitraum musste ich eine Pause machen, da es gewisse Probleme gab.</p>
-            </div>
-        
-            <div class="timebox">
-                <p><b style="color: rgb(34, 170, 233);">01.01.2026</b></p>
-                <p><b>Offizieller Start von NIOZCO</b></p>
-                <p>An diesem Tag habe ich offiziell mit NIOZCO angefangen. Auch wurde an diesem tag die Website zum ersten mal ver&ouml;ffentlichst. </p>
+    <hr>
+    <div class="main">
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-date">16.05.2026</div>
+                <div class="timeline-content">
+                    <h2>Website Update</h2>
+                    <p>Die Website wurde von komplett neu programmiert. Das Design, das Menü und so weiter, wurden verändert.</p>
+                </div>
             </div>
 
-        <hr class="invi">
+            <div class="timeline-item">
+                <div class="timeline-date">09.05.2026</div>
+                <div class="timeline-content">
+                    <h2>Entstehung des Charakters</h2>
+                    <p>Es geht um die Entstehung meines Charakters, wie ich ihn entwickelt habe.</p>
+                    <hr>
+                    <h2>Ank&uuml;ndigung</h2>
+                    <p>Das vorher angekündigte größere Projekt, wurde auf ein Jahr verschoben. Statt am 09.08.2026, soll es am 09.08.2027 starten.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">02.05.2026</div>
+                <div class="timeline-content">
+                    <h2>Entstehung des Logos</h2>
+                    <p>Es geht um die Entstehung meines Logos, wie ich es entwickelt habe.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">18.04.2026</div>
+                <div class="timeline-content">
+                    <h2>Ankündigung</h2>
+                    <p>Es wurde angekündigt, dass es weitergehen wird und ein größeres Projekt startet.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">30.01.2026 - 17.04.2026</div>
+                <div class="timeline-content">
+                    <h2>Pause</h2>
+                    <p>In diesem Zeitraum gab es eine Pause aufgrund verschiedener Probleme.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">01.01.2026</div>
+                <div class="timeline-content">
+                    <h2>Offizieller Start von NIOZCO</h2>
+                    <p>An diesem Tag begann das Projekt offiziell. Die Website wurde erstmals veröffentlicht.</p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-    <!-- Footer -->
-    <div class="webpart3">
-        <!-- Copyright -->
-        <span>&copy; NIOZCO 2026</span>
+    <div class="footer">
+        <span>© NIOZCO 2026</span>
         <span>·</span>
-        <!-- Imprint -->
-        <a href="impressum.html">Impressum</a>
+        <a href="./impressum.html">Impressum</a>
         <span>·</span>
-        <!-- Privacy Policy -->
-        <a href="datenschutz.html">Datenschutz</a>
+        <a href="./datenschutz.html">Datenschutz</a>
     </div>
 </body>
 </html>

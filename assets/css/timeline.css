@@ -1,11 +1,73 @@
-.timebox {
-    /* https://wiki.selfhtml.org/wiki/CSS/Tutorials/Boxmodell */
-  width: 50%;
-  color: white;
-  background-color: rgb(0, 37, 61);
-  border:  2px solid rgb(255, 255, 255);
-  border-radius: 0 5em 5em 5em;
-  margin:  20px auto;
-  padding: 2em;
+.timeline {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    position: relative;
 }
 
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 31px;
+    top: 0.3rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 170, 255);
+    box-shadow: 0 0 5px rgb(0, 170, 255);
+    z-index: 2;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    left: 39px;
+    top: 1.6rem;
+    width: 3px;
+    height: calc(100% + 1.5rem);
+    background-color: rgb(0, 170, 255);
+    opacity: 0.7;
+}
+
+.timeline-date {
+    color: #00aaff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    transition: 0.2s ease;
+}
+
+.timeline-content:hover {
+    border-color: #00aaff;
+    transform: translateY(-3px);
+}
+
+.timeline-content h2 {
+    margin-top: 0;
+}
+
+.timeline-content p {
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .timeline {
+        padding: 1rem;
+    }
+
+    .timeline-item {
+        padding-left: 3rem;
+    }
+}

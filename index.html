@@ -1,93 +1,81 @@
 <!DOCTYPE html>
-    <!-- Language -->
 <html lang="de">
 <head>
-    <!-- Encoding -->
     <meta charset="UTF-8">
-    <!-- Viewport-Meta-Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Website Favicon-->
     <link rel="shortcut icon" href="images/NIOZCO-Logo.png" type="image/x-icon">
-    <!-- Title-Tag -->
     <title>Start</title>
-    <!-- Basic Style File -->
-    <link rel="stylesheet" href="assets/css/style-1.css">
-    <!-- Style File for Popup -->
-    <link rel="stylesheet" href="assets/css/style-2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <div class="webpart1">
-        <!-- Logo -->
-        <img class="logo" src="images/NIOZCO-Logo.png" width="75px" alt="">
-        <!-- Menu -->
-        <div class="box">
-	        <a class="menu-button" href="#popup1">&equiv;</a>
-        </div>
-        <div id="popup1" class="overlay">
-	        <div class="popup">
-		        <a class="close" href="#">&times;</a>
-		        <div class="content">
-                    <!-- Language selection -->
-                    <h3>Sprachauswahl</h3>
-			        <a class="menu-links" href="index.html">Deutsch</a>
-			        <a class="menu-links" href="index-en.html">English</a>
-                    <hr>
-                    <!-- Menu -->
-                    <h3>Men&uuml;</h3>
-                    <a class="menu-links" href="index.html">Start</a>
-                    <a class="menu-links" href="portfolio.html">Portfolio</a>
-                    <a class="menu-links" href="timeline.html">Chronologie</a>
-                    <a class="menu-links" href="information.html">Informationen</a>
-                    <a class="menu-links" href="tools.html">Tools</a>
-                    <a class="menu-links" href="profile.html">Profile</a>
-                    <a class="menu-links" href="projekt.html">Demn&auml;chst Verf&uuml;gbar</a>
-		        </div>
-	        </div>
-        </div>
-        <!--
-            Popup / Modal (Pure CSS, without JavaScript)
-            Original Code by Prakash (@imprakash)
-            Source: https://codepen.io/imprakash/pen/GgNMXO
-            License: MIT License
-            Modified and adapted for this project
-        -->
-    </div>
-    <!-- Main -->
-    <div class="webpart2">
-        <!-- Welcome-Text -->
+    <div class="header">
+            <div class="language">
+                <a href="index.html">DE</a>
+                <a href="index-en.html">EN</a>
+            </div>
+        <img class="image" src="./images/NIOZCO-Logo.png" alt="">
         <h1>Herzlich Willkommen</h1>
-        <p>Ich erschaffe eigene Ideen und Projekte - von ersten Skizzen bis zu fertigen Ergebnissen.</p>
-        <p>Hier entstehen Schritt f&uuml;r Schritt:</p>
-        <ul>
-            <li><p>kreative Experimente</p></li>
-            <li><p>kleine Tools und Programme</p></li>
-            <li><p>und sonstige Projekte</p></li>
-        </ul>
-        <p>Alles entwickelt sich mit der Zeit - ohne Druck, aber mit klarer Richtung.</p>
-        <hr class="invi">
-        <hr>
-        <hr class="invi">
-        <p>Immer auf dem neuesten Stand bleiben</p>
-        <p>Alle aktuellen Updates und Neuigkeiten werden direkt im WhatsApp-Kanal veröffentlicht.</p>
-        <hr class="invi">
-        <div class="pro-icons">
-        <a href="https://whatsapp.com/channel/0029Vb7ugmoBfxo6kTjZgP3j"><img width="100px" src="images/whatsapp-color-icon.png" alt="WhatsApp" srcset=""></a>
-        <!-- https://uxwing.com/whatsapp-color-icon/ -->
-        <hr class="invi">
-        </div>
-        <p>Bildquelle: <a class="ltp" href="https://uxwing.com/">uxwing.com</a></p>
+        <p>Auf dieser Website finden Sie Projekte, Entwicklungen und weitere digitale Inhalte. Neue Bereiche und Inhalte werden schrittweise ergänzt.</p>
     </div>
-    <!-- Footer -->
-    <div class="webpart3">
-        <!-- Copyright -->
-        <span>&copy; NIOZCO 2026</span>
+    <hr>
+    <div class="main">
+
+    <a href="tools.html" class="menu-link">
+        <div class="mp">
+            <img class="image-menu" src="./images/NIOZCO-tools.png" alt="">
+            <p>Tools</p>
+        </div>
+    </a>
+
+    <a href="galerie.html" class="menu-link">
+        <div class="mp">
+            <img class="image-menu" src="./images/NIOZCO-gallery.png" alt="">
+            <p>Galerie</p>
+        </div>
+    </a>
+
+    <a href="info.html" class="menu-link">
+        <div class="mp">
+            <img class="image-menu" src="./images/NIOZCO-info.png" alt="">
+            <p>Info</p>
+        </div>
+    </a>
+
+    <a href="kooperation.html" class="menu-link">
+        <div class="mp">
+            <img class="image-menu" src="./images/NIOZCO-cooperation.png" alt="">
+            <p>Kooperation</p>
+        </div>
+    </a>
+
+    <a href="timeline.html" class="menu-link">
+        <div class="mp">
+            <img class="image-menu" src="./images/NIOZCO-timeline.png" alt="">
+            <p>Timeline</p>
+        </div>
+    </a>
+
+    <a href="portfolio.html" class="menu-link">
+        <div class="mp">
+            <img class="image-menu" src="./images/NIOZCO-portfolio.png" alt="">
+            <p>Portfolio</p>
+        </div>
+    </a>
+
+    <a href="accounts.html" class="menu-link">
+        <div class="mp">
+            <img class="image-menu" src="./images/NIOZCO-accounts.png" alt="">
+            <p>Accounts</p>
+        </div>
+    </a>
+
+    </div>
+    <div class="footer">
+        <span>© NIOZCO 2026</span>
         <span>·</span>
-        <!-- Imprint -->
-        <a href="impressum.html">Impressum</a>
+        <a href="./impressum.html">Impressum</a>
         <span>·</span>
-        <!-- Privacy Policy -->
-        <a href="datenschutz.html">Datenschutz</a>
+        <a href="./datenschutz.html">Datenschutz</a>
     </div>
 </body>
 </html>

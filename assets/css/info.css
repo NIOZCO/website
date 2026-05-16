@@ -1,0 +1,60 @@
+.info-navigation {
+    gap: 1rem;
+
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.info-navigation a {
+    text-decoration: none;
+    color: white;
+
+    background-color: #3f3f3f;
+
+    padding: 0.8rem 1.2rem;
+
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+.info-navigation a:hover {
+    background-color: rgb(0, 103, 172);
+    transform: translateY(-2px);
+}
+
+.table-content {
+    width: fit-content;
+
+    background-color: #1f1f1f;
+
+    border: 1px solid #555;
+
+    padding: 1rem 2rem;
+
+    margin: 2rem 0;
+
+    border-radius: 10px;
+}
+
+.table-content h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.table-content ol {
+    padding-left: 1.5rem;
+}
+
+.table-content li {
+    margin: 0.5rem 0;
+}
+
+.table-content a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.table-content a:hover {
+    text-decoration: underline;
+}
