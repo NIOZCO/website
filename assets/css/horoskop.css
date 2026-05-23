@@ -1,0 +1,63 @@
+.tool-box {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 1rem;
+
+    text-align: center;
+
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+.tool-box input,
+.tool-box button {
+    margin: 0.5rem;
+    padding: 0.8rem 1rem;
+
+    border-radius: 10px;
+    border: none;
+}
+
+.tool-box button {
+    background-color: rgb(0, 103, 172);
+    color: white;
+    cursor: pointer;
+}
+
+.tool-box button:hover {
+    background-color: rgb(0, 140, 230);
+}
+
+.results {
+    margin: 2rem;
+    text-align: left;
+}
+
+.result-card {
+    background-color: #181818;
+    border: 1px solid #444;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.result-card h3 {
+    margin-top: 0;
+    color: #00aaff;
+}
+
+.info-card {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    transition: 0.2s ease;
+
+    margin: 20px;
+    box-sizing: border-box;
+}
