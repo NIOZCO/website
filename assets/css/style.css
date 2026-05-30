@@ -111,6 +111,12 @@ body {
     height: auto;
 }
 
+.image-sheet {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+}
+
 .image-menu {
     width: 230px;
     max-width: 100%;
