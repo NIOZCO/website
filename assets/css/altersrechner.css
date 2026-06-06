@@ -1,0 +1,67 @@
+
+    .container {
+      background: rgb(23, 23, 23);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 420px;
+      border: 1px solid #424242;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 6px;
+      background: rgb(0, 103, 172);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: rgb(0, 140, 230);
+    }
+
+    .result {
+      margin-top: 20px;
+      background: rgb(33,33,33);
+      padding: 15px;
+      border-radius: 8px;
+      line-height: 1.7;
+    }
+
+    .error {
+      color: red;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+.info-card {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    transition: 0.2s ease;
+
+    margin: 20px;
+    box-sizing: border-box;
+}

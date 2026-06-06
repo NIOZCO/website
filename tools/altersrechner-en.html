@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/NIOZCO-Logo.png" type="image/x-icon">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/altersrechner.css">
+    <script src="../assets/js/altersrechner-en.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="bl">
+            <div class="back">
+                <a href="../tools-en.html">&lArr;</a>
+            </div>
+            <div class="language">
+                <a href="altersrechner.html">DE</a>
+                <a href="altersrechner-en.html">EN</a>
+            </div>
+        </div>
+        <h1>Age Calculator</h1>
+    </div>
+    <hr>
+    <div class="main">
+        <hr class="invi">
+
+            <div class="container">
+                <label for="birthday">Date of Birth:</label>
+                <input type="date" id="birthday" />
+
+                <label for="birthtime">Time of Birth (optional):</label>
+                <input type="time" id="birthtime" />
+
+                <button onclick="calculateAge()">Calculate Age</button>
+
+                <div id="error" class="error"></div>
+                <div id="result" class="result" style="display: none;"></div>
+            </div>
+        
+        <hr class="invi">
+    </div>
+
+    <div class="info-card">
+        <h3>Notice</h3>
+        <p>The calculation is performed locally in the browser. No entered data is stored or transmitted.</p>
+        <p>This tool was developed with the help of AI for support purposes.</p>
+    </div>
+        <hr class="invi">
+    <div class="footer">
+        <span>© NIOZCO 2026</span>
+        <span>·</span>
+        <a href="../impressum-en.html">Impressum</a>
+        <span>·</span>
+        <a href="../datenschutz-en.html">Datenschutz</a>
+    </div>
+</body>
+</html>
