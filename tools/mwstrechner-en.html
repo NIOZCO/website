@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/NIOZCO-Logo.png" type="image/x-icon">
+    <title>VAT Calculator</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mwst.css">
+    <script src="../assets/js/mwst.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="bl">
+            <div class="back">
+                <a href="../tools.html">&lArr;</a>
+            </div>
+            <div class="language">
+                <a href="mwstrechner.html">DE</a>
+                <a href="mwstrechner-en.html">EN</a>
+            </div>
+        </div>
+        <h1>VAT Calculator</h1>
+    </div>
+    <hr>
+    <div class="main">
+        <hr class="invi">
+
+            <div class="container">
+
+                <label for="modus">Choose calculation:</label>
+                    <select id="modus">
+                        <option value="nettoZuBrutto">Net to Gross</option>
+                        <option value="bruttoZuNetto">Gross to Net</option>
+                    </select>
+
+                <label for="steuersatz">VAT Rate:</label>
+                    <select id="steuersatz">
+                        <option value="19">19%</option>
+                        <option value="7">7%</option>
+                    </select>
+
+                <label for="betrag">Enter Amount:</label>
+                <input type="number" id="betrag" placeholder="e.g., 100" step="0.01">
+
+                <button onclick="berechnen()">Calculate</button>
+
+                <div class="result" id="ergebnis">
+                    Result will be displayed here.
+                </div>
+            </div>
+        </div>
+
+        <hr class="invi">
+    </div>
+
+    <div class="info-card">
+        <h3>Notice</h3>
+        <p>The calculation is performed locally in the browser. No entered data is stored or transmitted.</p>
+        <p>For support, this tool was developed with the help of AI.</p>
+        <hr class="invi">
+        <h3>Sources</h3>
+        <p><sup>1</sup> <a class="ltp" href="https://www.gesetze-im-internet.de/ustg_1980/__12.html" target="_blank">Section 12(1) of the Value Added Tax Act (UStG): The general value-added tax rate is 19%.</a></p>
+        <p><sup>2</sup> <a class="ltp" href="https://www.gesetze-im-internet.de/ustg_1980/__12.html" target="_blank">Section 12(2) of the Value Added Tax Act (UStG): The general value-added tax rate is 7%.</a></p>
+    </div>
+        <hr class="invi">
+    <div class="footer">
+        <span>© NIOZCO 2026</span>
+        <span>·</span>
+        <a href="../impressum-en.html">Imprint</a>
+        <span>·</span>
+        <a href="../datenschutz-en.html">Privacy Policy</a>
+    </div>
+</body>
+</html>

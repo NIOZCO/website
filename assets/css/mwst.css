@@ -16,12 +16,14 @@
     }
 
     input, select, button {
-      width: 100%;
+      width: 80%;
       padding: 10px;
       margin-top: 5px;
       border-radius: 6px;
       border: none;
       font-size: 16px;
+      background-color: #1b1b1b;
+      color: white;
     }
 
     button {
@@ -41,3 +43,20 @@
       background: #1b1b1b;
       border-radius: 8px;
     }
+
+.info-card {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    transition: 0.2s ease;
+
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+select {
+  background-color: black;
+  color: white;
+}

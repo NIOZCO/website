@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/NIOZCO-Logo.png" type="image/x-icon">
+    <title>Mehrwertsteuer-Rechner</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mwst.css">
+    <script src="../assets/js/mwst.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="bl">
+            <div class="back">
+                <a href="../tools.html">&lArr;</a>
+            </div>
+            <div class="language">
+                <a href="mwstrechner.html">DE</a>
+                <a href="mwstrechner-en.html">EN</a>
+            </div>
+        </div>
+        <h1>Mehrwertsteuer-Rechner</h1>
+    </div>
+    <hr>
+    <div class="main">
+        <hr class="invi">
+
+            <div class="container">
+
+                <label for="modus">Berechnung auswählen:</label>
+                    <select id="modus">
+                        <option value="nettoZuBrutto">Netto zu Brutto</option>
+                        <option value="bruttoZuNetto">Brutto zu Netto</option>
+                    </select>
+
+                <label for="steuersatz">Mehrwertsteuer:</label>
+                    <select id="steuersatz">
+                        <option value="19">19%</option>
+                        <option value="7">7%</option>
+                    </select>
+
+                <label for="betrag">Betrag eingeben:</label>
+                <input type="number" id="betrag" placeholder="z. B. 100" step="0.01">
+
+                <button onclick="berechnen()">Berechnen</button>
+
+                <div class="result" id="ergebnis">
+                    Ergebnis wird hier angezeigt.
+                </div>
+            </div>
+        </div>
+
+        <hr class="invi">
+    </div>
+
+    <div class="info-card">
+        <h3>Hinweis</h3>
+        <p>Die Berechnung erfolgt lokal im Browser. Es werden keine eingegebenen Daten gespeichert oder übertragen.</p>
+        <p>Zur Unterstützung wurde dieses Tool mit Hilfe von KI entwickelt.</p>
+        <hr class="invi">
+        <h3>Quellen</h3>
+        <p><sup>1</sup> <a class="ltp" href="https://www.gesetze-im-internet.de/ustg_1980/__12.html" target="_blank">§ 12 Abs. 1 UStG: Der allgemeine Umsatzsteuersatz (Mehrwertsteuer) beträgt 19 %.</a></p>
+        <p><sup>2</sup> <a class="ltp" href="https://www.gesetze-im-internet.de/ustg_1980/__12.html" target="_blank">§ 12 Abs. 2 UStG: Der allgemeine Umsatzsteuersatz (Mehrwertsteuer) beträgt 7 %.</a></p>
+    </div>
+        <hr class="invi">
+    <div class="footer">
+        <span>© NIOZCO 2026</span>
+        <span>·</span>
+        <a href="../impressum.html">Impressum</a>
+        <span>·</span>
+        <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+</body>
+</html>
