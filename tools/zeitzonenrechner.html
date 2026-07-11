@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/NIOZCO-Logo.png" type="image/x-icon">
+    <title>Zeitzonenrechner</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/zeitzonenrechner.css">
+    <script src="../assets/js/zeitzonenrechner.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="bl">
+            <div class="back">
+                <a href="../tools.html">&lArr;</a>
+            </div>
+            <div class="language">
+                <a href="zeitzonenrechner.html">DE</a>
+                <a href="zeitzonenrechner-en.html">EN</a>
+            </div>
+        </div>
+        <h1>Zeitzonenrechner</h1>
+    </div>
+    <hr>
+    <div class="main">
+
+            <main class="container">
+        <header class="header">
+
+            <p>
+                Wähle zwei Orte aus und finde heraus, wie spät es am Zielort
+                ist, wenn am Ausgangsort eine bestimmte Uhrzeit gilt.
+            </p>
+        </header>
+
+        <section class="card">
+            <form id="timeConverterForm" class="form-grid">
+                <div class="form-group">
+                    <label for="sourceLocation">
+                        Ausgangsort
+                    </label>
+
+                    <select id="sourceLocation" required></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sourceTime">
+                        Uhrzeit am Ausgangsort
+                    </label>
+
+                    <input
+                        id="sourceTime"
+                        type="time"
+                        value="18:00"
+                        required
+                    >
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="targetLocation">
+                        Zielort
+                    </label>
+
+                    <select id="targetLocation" required></select>
+                </div>
+
+                <div class="button-row">
+                    <button class="primary-button" type="submit">
+                        Uhrzeit umrechnen
+                    </button>
+
+                    <button
+                        id="swapButton"
+                        class="secondary-button"
+                        type="button"
+                    >
+                        Orte tauschen
+                    </button>
+                </div>
+            </form>
+
+            <div class="notice">
+                Die Berechnung verwendet das heutige Datum. Das ist notwendig,
+                weil sich Zeitunterschiede durch Sommer- und Winterzeit ändern
+                können.
+            </div>
+
+            <div
+                id="errorMessage"
+                class="error"
+                role="alert"
+                aria-live="polite"
+            ></div>
+
+            <section
+                id="result"
+                class="result"
+                aria-live="polite"
+            >
+                <p id="resultHeading" class="result-heading"></p>
+
+                <div class="result-comparison">
+                    <div class="time-card">
+                        <div
+                            id="sourceResultLocation"
+                            class="location-name"
+                        ></div>
+
+                        <div
+                            id="sourceResultTime"
+                            class="time-value"
+                        ></div>
+
+                        <div
+                            id="sourceResultDay"
+                            class="day-label"
+                        ></div>
+                    </div>
+
+                    <div class="arrow" aria-hidden="true">
+                        →
+                    </div>
+
+                    <div class="time-card target">
+                        <div
+                            id="targetResultLocation"
+                            class="location-name"
+                        ></div>
+
+                        <div
+                            id="targetResultTime"
+                            class="time-value"
+                        ></div>
+
+                        <div
+                            id="targetResultDay"
+                            class="day-label"
+                        ></div>
+                    </div>
+                </div>
+
+                <div id="timeDifference" class="difference"></div>
+            </section>
+
+        </section>
+    </main>
+        
+        <hr class="invi">
+    </div>
+
+    <div class="info-card">
+        <h3>Hinweis</h3>
+        <p>Die Berechnung erfolgt lokal im Browser. Es werden keine eingegebenen Daten gespeichert oder übertragen.</p>
+        <p>Zur Unterstützung wurde dieses Tool mit Hilfe von KI entwickelt.</p>
+    </div>
+        <hr class="invi">
+    <div class="footer">
+        <span>© NIOZCO 2026</span>
+        <span>·</span>
+        <a href="../impressum.html">Impressum</a>
+        <span>·</span>
+        <a href="../datenschutz.html">Datenschutz</a>
+    </div>
+</body>
+</html>
